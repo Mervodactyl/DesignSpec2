@@ -1,0 +1,25 @@
+/*  CSS stylesheet for: 'https://github.com/Mervodactyl/DesignSpec2.git'
+*   <style type="text/css">
+*
+*   Standard size
+=============================================================================*/
+
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #BEF781;
+}
