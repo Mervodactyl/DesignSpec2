@@ -1,8 +1,9 @@
-/*  CSS stylesheet for: 'https://github.com/Mervodactyl/DesignSpec2.git'
+/*  CSS stylesheet for: 'https://github.com/Mervodactyl/some_SCSS.git'
 *   <style type="text/css">
 *
 *   Standard size
 =============================================================================*/
+@import url ('normalize.css');
 
 html {
     -webkit-box-sizing: border-box;
