@@ -1,4 +1,4 @@
-# DesignSpec2
+# Some SCSS
 
 First full website built using SCSS
 

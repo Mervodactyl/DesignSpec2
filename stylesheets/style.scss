@@ -1,0 +1,59 @@
+@import "normalize.css";
+// @import "scss_variables_mixins";
+
+*,
+*:before,
+*:after {
+  // margin: 0;
+  // padding: 0;
+    // @include border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+
+html, body {
+  height: 1005;
+  width: 100%;
+  background-color: yellow;
+}
+
+header {
+  padding: 5px;
+  margin: 5px;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+main {
+  padding: 5px;
+  margin: 5px;
+  width: 73%;
+  float: left;
+  background-color: purple;
+  border: 2px solid black;
+}
+
+div {
+  padding: 5px;
+  margin: 5px;
+  background-color: pink;
+  border: 2px solid black;
+}
+
+section {
+  padding: 5px;
+  margin: 5px;
+  width: 23%;
+  float: left;
+  background-color: orange;
+  border: 2px solid black;
+}
+
+footer {
+  padding: 5px;
+  margin: 5px;
+  clear: both;
+  background-color: green;
+  border: 2px solid black;
+}
