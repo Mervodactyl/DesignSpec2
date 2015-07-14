@@ -1,13 +1,12 @@
-@import url(normalize.css);
-.wrapper,
+#wrapper,
 .row {
   *zoom: 1; }
-  .wrapper:before,
-  .row:before, .wrapper:after,
+  #wrapper:before,
+  .row:before, #wrapper:after,
   .row:after {
     content: " ";
     display: table; }
-  .wrapper:after,
+  #wrapper:after,
   .row:after {
     clear: both; }
 
@@ -15,24 +14,49 @@
 *:before,
 *:after {
   margin: 0;
-  padding: 0;
-  border: 3px solid black;
+  padding: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  background-color: orange; }
-
-.wrapper {
+html, body {
+  height: 100%;
   width: 100%;
-  margin: 0 auto; }
+  background-color: yellow;
+  border: 2px solid black; }
 
-[class*='columns-'] {
+#wrapper {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 65em;
+  background-color: violet;
+  border: 2px solid black; }
+
+[class*='column-'] {
   float: left;
   padding: 1em;
   width: 100%;
   min-height: 1px; }
+
+header {
+  background-color: blue;
+  border: 2px solid black; }
+
+main {
+  background-color: purple;
+  border: 2px solid black; }
+
+div {
+  background-color: pink;
+  border: 2px solid black; }
+
+section {
+  background-color: orange;
+  border: 2px solid black; }
+
+footer {
+  background-color: green;
+  border: 2px solid black; }
 
 @media only screen and (min-width: 30em) {
   .wrapper {

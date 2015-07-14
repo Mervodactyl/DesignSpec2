@@ -1,0 +1,79 @@
+@import "scss_variables_mixins";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 5px;
+    @include border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+#wrapper,
+.row {
+  @extend %clearfix;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 95%;
+  max-width: $grid-max-width;
+  background-color: violet;
+  border: 2px solid black;
+}
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+header {
+  background-color: blue;
+  border: 2px solid black;
+}
+
+#center-row {
+  // height:40em;
+  // height: 80%;
+  // height: 800px;
+  }
+
+main {
+  background-color: purple;
+  border: 2px solid black;
+}
+
+div {
+  background-color: pink;
+  border: 2px solid black;
+}
+
+section {
+  background-color: orange;
+  border: 2px solid black;
+}
+
+footer {
+  background-color: green;
+  border: 2px solid black;
+}
+
+@media #{$breakpoint-medium} {
+  .wrapper {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  @for $x from 1 through $grid-columns {
+    .column-#{$x} {
+      width: 100% / $grid-columns * $x;
+    }
+  }
+}

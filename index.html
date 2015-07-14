@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF8">
     <title>Some Scss</title>
-    <link href="stylesheets/style.scss" type="text/scss" rel="stylesheet">
+    <link href="stylesheets/style.css" type="text/scss" rel="stylesheet">
+    <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>This is a big old Header for your pleasure</h1>
-    </header>
-      <main>
-        <div><p>Here is the bit below the header and room for space</p></div>
-        <div><p>This one is just below that one</p></div>
-      </main>
-        <section>And a little off to the side just for fun</section>
-    <footer>
-      <p>A small mention here just for note</p>
-    </footer>
+    <div id="wrapper">
+      <div class="row">
+        <header class="column-12">
+          <h1>This is a big old Header for your pleasure</h1>
+        </header>
+      </div>
+        <div class="row" id="center-row">
+          <main class="column-8">
+            <div><p>Here is the bit below the header and room for space</p></div>
+            <div><p>This one is just below that one</p></div>
+          </main>
+            <section class="column-4">And a little off to the side just for fun</section>
+        </div>
+      <div class="row">
+        <footer class="column-12">
+          <p>A small mention here just for note</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
