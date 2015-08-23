@@ -21,9 +21,7 @@
 
 html, body {
   height: 100%;
-  width: 100%;
-  background-color: yellow;
-  border: 2px solid black; }
+  width: 100%; }
 
 #wrapper {
   margin: 0 auto;
@@ -42,8 +40,19 @@ header {
   background-color: blue;
   border: 2px solid black; }
 
-main {
+header img {
+  max-width: 100%;
+  height: auto !important;
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+nav {
   background-color: purple;
+  border: 2px solid black; }
+
+nav li {
   border: 2px solid black; }
 
 div {
@@ -98,5 +107,3 @@ footer {
 
   .column-12 {
     width: 100%; } }
-
-/*# sourceMappingURL=style.css.map */

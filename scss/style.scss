@@ -11,8 +11,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: yellow;
-  border: 2px solid black;
+  // background-color: yellow;
+  // border: 2px solid black;
 }
 
 #wrapper,
@@ -24,6 +24,7 @@ html, body {
   margin: 0 auto;
   width: 95%;
   max-width: $grid-max-width;
+
   background-color: violet;
   border: 2px solid black;
 }
@@ -39,6 +40,15 @@ header {
   background-color: blue;
   border: 2px solid black;
 }
+  header img {
+    max-width: 100%;
+    height: auto !important;
+
+    width: 45%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    }
 
 #center-row {
   // height:40em;
@@ -46,10 +56,13 @@ header {
   // height: 800px;
   }
 
-main {
+nav {
   background-color: purple;
   border: 2px solid black;
 }
+  nav li {
+    border: 2px solid black;
+  }
 
 div {
   background-color: pink;
