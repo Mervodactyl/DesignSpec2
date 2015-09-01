@@ -1,4 +1,4 @@
-# Some SCSS
+# Some SCSSy little Digimon
 
 First full website built using SCSS
 
