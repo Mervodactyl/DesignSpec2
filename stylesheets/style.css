@@ -55,12 +55,15 @@ nav {
 nav li {
   border: 2px solid black; }
 
-div {
-  background-color: pink;
-  border: 2px solid black; }
+nav ul li #agu {
+  background: no-repeat; }
 
 section {
   background-color: orange;
+  border: 2px solid black; }
+
+div .full-size {
+  background-color: yellow;
   border: 2px solid black; }
 
 section img {
