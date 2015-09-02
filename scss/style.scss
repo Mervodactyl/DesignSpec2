@@ -40,6 +40,7 @@ html, body {
   margin: 0 auto;
   width: 95%;
   max-width: $grid-max-width;
+  box-shadow: -3px 0 #97b3cd, 0 3px #97b3cd, 3px 0 #97b3cd, 0 -3px #97b3cd;
 
   background-color: #fecc3e;
   border: 10px solid black;
@@ -61,7 +62,7 @@ header {
     max-width: 100%;
     height: auto !important;
 
-    width: 80%;
+    width: 65%;
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -93,11 +94,13 @@ nav { /* div gallery*/
         text-decoration: none;
       }
       nav ul li a:hover {
-        color: #fff045;
+        color: #ff6600;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
       }
-      nav ul li a:visited {
-        // color: #ff6600;
-      }
+      // nav ul li a:visited {
+      //   color: #ff6600;
+      //   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      // }
         nav ul li a img { /* div gallery img */
           // display: none;
           border: 2px solid black;
