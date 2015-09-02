@@ -1,17 +1,20 @@
 @import "scss_variables_mixins";
 @import "../stylesheets/normalize.css";
-  @font-face {
-    font-family: 'Digital_tech';
-    src: url('../fonts/Digital_tech.otf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Digital Sans';
-    src: url('../fonts/Digital Sans EF Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
+
+
+// edit this mixin!!!!
+              @font-face {
+                font-family: 'Digital_tech';
+                src: url('../fonts/Digital_tech.otf');
+                font-weight: normal;
+                font-style: normal;
+              }
+              @font-face {
+                font-family: 'Digital Sans';
+                src: url('../fonts/Digital Sans EF Medium.ttf');
+                font-weight: normal;
+                font-style: normal;
+              }
 
 *,
 *:before,
@@ -24,7 +27,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  // background-color: yellow;
+  background-color: #074b88;
   // border: 2px solid black;
 }
 
@@ -38,8 +41,8 @@ html, body {
   width: 95%;
   max-width: $grid-max-width;
 
-  background-color: violet;
-  border: 2px solid black;
+  background-color: #fecc3e;
+  border: 10px solid black;
 }
 
 [class*='column-'] {
@@ -50,6 +53,7 @@ html, body {
 }
 
 header {
+  height: 50%;
   // background-color: blue;
   // border: 2px solid black;
 }
@@ -57,10 +61,10 @@ header {
     max-width: 100%;
     height: auto !important;
 
-    width: 45%;
+    width: 80%;
     display:block;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 #center-row {
@@ -77,6 +81,7 @@ nav { /* div gallery*/
     // font-family: 'Oswald', sans-serif;
     font-family: 'Digital_tech';
     font-weight: bold;
+      // @include declare-font-face('Digital_tech');
   }
     nav ul li {
       text-align: center;
@@ -84,11 +89,14 @@ nav { /* div gallery*/
       border-bottom: 2px solid black;
     }
       nav ul li a {
-        color: blue;
+        color: #074b88;
         text-decoration: none;
       }
+      nav ul li a:hover {
+        color: #fff045;
+      }
       nav ul li a:visited {
-        color: orange;
+        // color: #ff6600;
       }
         nav ul li a img { /* div gallery img */
           // display: none;
@@ -133,6 +141,8 @@ section #full-size { /* div#full-size */
 footer {
   // background-color: green;
   // border: 2px solid black;
+  // color: #074b88;
+
   font-family: 'Digital Sans';
 }
 
