@@ -3,35 +3,49 @@
   <head>
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Some Scss</title>
+    <title>Scssy little Digimon</title>
     <link href="stylesheets/style.css" type="text/scss" rel="stylesheet">
     <link href="stylesheets/normalize.css" type="text/css" rel="stylesheet">
+
+    <script>
+    $(document).ready(function() {
+      $("a").click(function(e) {
+        var newClass = $(this).attr("id");
+        var oldClass = $("#full-size").attr("class");
+          $("#full-size").fadeOut(function() {
+          $("#full-size").removeClass(oldClass).addClass(newClass).fadeIn("slow");
+        });
+      });
+    });
+    </script>
+
   </head>
   <body>
     <div id="wrapper">
       <div class="row">
         <header class="column-12">
-          <img src="images/Digimon_Logo.png" alt="Digital Monsters Logo" title="Digimon logo">
+          <img src="images/digimon_Logo.png" alt="Digital Monsters Logo" title="Digimon logo">
         </header>
       </div>
-        <div class="row" id="center-row">
+        <div id="center-row" class="row" >
           <nav class="column-4">
             <ul>
-              <li><a href="#" id="group-img">Digital Monster Story</a></li>
+              <li><a href="#" id="all">The Digimon Gang</a></li>
+              <!-- <img src="images/digimon_all.png" alt="image of entire digimon group" title="here is the gang!"> -->
               <li><a href="#" id="agu">Agumon</a></li>
-              <li><a href="#" id="gabu">Gabumon</a></li>
-              <li><a href="#" id="biyo">Biyomon</a></li>
-              <li><a href="#" id="tento">Tentomon</a></li>
-              <li><a href="#" id="pai">Paimon</a></li>
-              <li><a href="#" id="goma">Gomamon</a></li>
-              <li><a href="#" id="pata">Patamon</a></li>
-              <li><a href="#" id="gato">Gatomon</a></li>
+              <!-- <img src="images/evolutions/agu/agu1.png" alt="image of Agumon" title="what's up guys!"> -->
+              <li><a href="#" id="gabu"><img src="" alt="" title="">Gabumon</a></li>
+              <li><a href="#" id="biyo"><img src="" alt="" title="">Biyomon</a></li>
+              <li><a href="#" id="tento"><img src="" alt="" title="">Tentomon</a></li>
+              <li><a href="#" id="pai"><img src="" alt="" title="">Paimon</a></li>
+              <li><a href="#" id="goma"><img src="" alt="" title="">Gomamon</a></li>
+              <li><a href="#" id="pata"><img src="" alt="" title="">Patamon</a></li>
+              <li><a href="#" id="gato"><img src="" alt="" title="">Gatomon</a></li>
             </ul>
           </nav>
             <section class="column-8">
-              <div class="full-size" id="big-picture">
+              <div id="full-size" class="all">
                 &nbsp
-              <!-- <img src="images/agumon.png" alt="Agumon Digimon" title="Image of Agumon Digimon"> -->
               </div>
             </section>
         </div>
@@ -42,5 +56,6 @@
       </div>
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="js/jQuery.js"></script> -->
   </body>
 </html>

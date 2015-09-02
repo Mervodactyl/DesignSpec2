@@ -1,4 +1,17 @@
 @import "scss_variables_mixins";
+@import "../stylesheets/normalize.css";
+  @font-face {
+    font-family: 'Digital_tech';
+    src: url('../fonts/Digital_tech.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Digital Sans';
+    src: url('../fonts/Digital Sans EF Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 *,
 *:before,
@@ -37,8 +50,8 @@ html, body {
 }
 
 header {
-  background-color: blue;
-  border: 2px solid black;
+  // background-color: blue;
+  // border: 2px solid black;
 }
   header img {
     max-width: 100%;
@@ -56,43 +69,71 @@ header {
   // height: 800px;
   }
 
-nav {
-  background-color: purple;
+nav { /* div gallery*/
+  // background-color: purple;
+  // border: 2px solid black;
+}
+  nav ul {
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'Digital_tech';
+    font-weight: bold;
+  }
+    nav ul li {
+      text-align: center;
+      list-style-type: none;
+      border-bottom: 2px solid black;
+    }
+      nav ul li a {
+        color: blue;
+        text-decoration: none;
+      }
+      nav ul li a:visited {
+        color: orange;
+      }
+        nav ul li a img { /* div gallery img */
+          // display: none;
+          border: 2px solid black;
+        }
+
+
+section #full-size { /* div#full-size */
+  background-size: contain;
+
+  background-color: yellow;
   border: 2px solid black;
 }
-  nav li {
-    border: 2px solid black;
+  section.all {
+    background: url('images/digimon_all.png');
+    // no-repeat left top
+
+    // height: 300px;
+    // width: 300px;
+    // background-color: orange;
+    // border: 2px solid black;
   }
-    nav ul li #agu {
-      background: no-repeat;
-    }
 
-section {
-  background-color: orange;
-  border: 2px solid black;
-}
-  div .full-size{
-    background-color: yellow;
-    border: 2px solid black;
+  section #full-size .agu {
+    background: url('images/evolutions/agu/agu1.png');
   }
-    section img {
-      max-width: 100%;
-      height: auto !important;
-
-      width: 99%;
-      display:block;
-      margin-left:auto;
-      margin-right:auto;
-
-      // background-size: contain;
-    }
+    // section img {
+    //   max-width: 100%;
+    //   height: auto !important;
+    //
+    //   width: 99%;
+    //   display:block;
+    //   margin-left:auto;
+    //   margin-right:auto;
+    //
+    //   // background-size: contain;
+    // }
 
 
 
 
 footer {
-  background-color: green;
-  border: 2px solid black;
+  // background-color: green;
+  // border: 2px solid black;
+  font-family: 'Digital Sans';
 }
 
 @media #{$breakpoint-medium} {

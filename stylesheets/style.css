@@ -1,3 +1,4 @@
+@import url(../stylesheets/normalize.css);
 #wrapper,
 .row {
   *zoom: 1; }
@@ -10,6 +11,16 @@
   .row:after {
     clear: both; }
 
+@font-face {
+  font-family: 'Digital_tech';
+  src: url("../fonts/Digital_tech.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Digital Sans';
+  src: url("../fonts/Digital Sans EF Medium.ttf");
+  font-weight: normal;
+  font-style: normal; }
 *,
 *:before,
 *:after {
@@ -36,10 +47,6 @@ html, body {
   width: 100%;
   min-height: 1px; }
 
-header {
-  background-color: blue;
-  border: 2px solid black; }
-
 header img {
   max-width: 100%;
   height: auto !important;
@@ -49,34 +56,42 @@ header img {
   margin-right: auto; }
 
 nav {
-  background-color: purple;
+  /* div gallery*/ }
+
+nav ul {
+  font-family: 'Digital_tech';
+  font-weight: bold; }
+
+nav ul li {
+  text-align: center;
+  list-style-type: none;
+  border-bottom: 2px solid black; }
+
+nav ul li a {
+  color: blue;
+  text-decoration: none; }
+
+nav ul li a:visited {
+  color: orange; }
+
+nav ul li a img {
+  /* div gallery img */
   border: 2px solid black; }
 
-nav li {
-  border: 2px solid black; }
-
-nav ul li #agu {
-  background: no-repeat; }
-
-section {
-  background-color: orange;
-  border: 2px solid black; }
-
-div .full-size {
+section #full-size {
+  /* div#full-size */
+  background-size: contain;
   background-color: yellow;
   border: 2px solid black; }
 
-section img {
-  max-width: 100%;
-  height: auto !important;
-  width: 99%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+section.all {
+  background: url("images/digimon_all.png"); }
+
+section #full-size .agu {
+  background: url("images/evolutions/agu/agu1.png"); }
 
 footer {
-  background-color: green;
-  border: 2px solid black; }
+  font-family: 'Digital Sans'; }
 
 @media only screen and (min-width: 30em) {
   .wrapper {
@@ -118,3 +133,5 @@ footer {
 
   .column-12 {
     width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
