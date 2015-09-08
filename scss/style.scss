@@ -28,7 +28,6 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #074b88;
-  // border: 2px solid black;
 }
 
 #wrapper,
@@ -55,8 +54,6 @@ html, body {
 
 header {
   height: 50%;
-  // background-color: blue;
-  // border: 2px solid black;
 }
   header img {
     max-width: 100%;
@@ -68,18 +65,10 @@ header {
     margin-right: auto;
     }
 
-#center-row {
-  // height:40em;
-  // height: 80%;
-  // height: 800px;
-  }
-
 nav { /* div gallery*/
-  // background-color: purple;
-  // border: 2px solid black;
+
 }
   nav ul {
-    // font-family: 'Oswald', sans-serif;
     font-family: 'Digital_tech';
     font-weight: bold;
       // @include declare-font-face('Digital_tech');
@@ -97,46 +86,46 @@ nav { /* div gallery*/
         color: #ff6600;
         text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
       }
-      // nav ul li a:visited {
-      //   color: #ff6600;
-      //   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      // }
-        nav ul li a img { /* div gallery img */
-          // display: none;
-          border: 2px solid black;
-        }
-
+      nav ul li a:visited {
+        color: #ff6600;
+        text-shadow: -10px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
 
 section #full-size { /* div#full-size */
-  background-size: contain;
-
-  background-color: yellow;
+  background-size: 100%;
   border: 2px solid black;
 }
-  section.all {
-    background: url('images/digimon_all.png');
-    // no-repeat left top
 
-    // height: 300px;
-    // width: 300px;
-    // background-color: orange;
-    // border: 2px solid black;
+
+  section .all { /* div.slope */
+    //  background-size: 100%;
+    background: url('../images/digimon_all_edited.png') no-repeat;
+  }
+  section .agu {
+    background: url('../images/agu1.png') no-repeat;
+  }
+  section .gabu {
+    background: url('../images/gabu1.png') no-repeat;
+  }
+  section .biyo {
+    background: url('../images/biyo1.png') no-repeat;
+  }
+  section .tento {
+    background: url('../images/tento1.png') no-repeat;
+  }
+  section .pal {
+    background: url('../images/pal1.png') no-repeat;
+  }
+  section .goma {
+    background: url('../images/goma1.png') no-repeat;
+  }
+  section .pata {
+    background: url('../images/pata1.png') no-repeat;
+  }
+  section .gato {
+    background: url('../images/gato2.png') no-repeat;
   }
 
-  section #full-size .agu {
-    background: url('images/evolutions/agu/agu1.png');
-  }
-    // section img {
-    //   max-width: 100%;
-    //   height: auto !important;
-    //
-    //   width: 99%;
-    //   display:block;
-    //   margin-left:auto;
-    //   margin-right:auto;
-    //
-    //   // background-size: contain;
-    // }
 
 
 
@@ -160,3 +149,9 @@ footer {
     }
   }
 }
+
+//
+// #074b88 dark blue
+// #97b3cd gray/white
+// #fecc3e yellow
+// #ff6600 orange

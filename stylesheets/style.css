@@ -80,21 +80,42 @@ nav ul li a:hover {
   color: #ff6600;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
 
-nav ul li a img {
-  /* div gallery img */
-  border: 2px solid black; }
+nav ul li a:visited {
+  color: #ff6600;
+  text-shadow: -10px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 section #full-size {
   /* div#full-size */
-  background-size: contain;
-  background-color: yellow;
+  background-size: 100%;
   border: 2px solid black; }
 
-section.all {
-  background: url("images/digimon_all.png"); }
+section .all {
+  /* div.slope */
+  background: url("../images/digimon_all_edited.png") no-repeat; }
 
-section #full-size .agu {
-  background: url("images/evolutions/agu/agu1.png"); }
+section .agu {
+  background: url("../images/agu1.png") no-repeat; }
+
+section .gabu {
+  background: url("../images/gabu1.png") no-repeat; }
+
+section .biyo {
+  background: url("../images/biyo1.png") no-repeat; }
+
+section .tento {
+  background: url("../images/tento1.png") no-repeat; }
+
+section .pal {
+  background: url("../images/pal1.png") no-repeat; }
+
+section .goma {
+  background: url("../images/goma1.png") no-repeat; }
+
+section .pata {
+  background: url("../images/pata1.png") no-repeat; }
+
+section .gato {
+  background: url("../images/gato2.png") no-repeat; }
 
 footer {
   font-family: 'Digital Sans'; }
