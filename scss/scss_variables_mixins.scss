@@ -1,11 +1,19 @@
 // variables
 //===========================================================================//
+
 // grid variables
 $grid-columns: 12;
 $grid-max-width: 65em;
+
 // breakpoints
 $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
+
+// colours
+$blue: #074b88;
+$yellow: #fecc3e;
+$gray: #97b3cd;
+$orange: #ff6600;
 
 // mixins
 //===========================================================================//
@@ -27,6 +35,13 @@ $breakpoint-medium: "only screen and (min-width: 30em)";
   }
 }
 
+@mixin digi-border {
+  box-shadow: -3px 0 #97b3cd, 0 3px #97b3cd, 3px 0 #97b3cd, 0 -3px #97b3cd;
+}
+
+@mixin glow {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
 // mixin for bullet proof font declaration syntax
 //
 @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {

@@ -35,13 +35,14 @@ html, body {
   width: 100%;
   background-color: #074b88; }
 
-#wrapper {
+#wrapper,
+.row {
   margin: 0 auto;
   width: 95%;
   max-width: 65em;
-  box-shadow: -3px 0 #97b3cd, 0 3px #97b3cd, 3px 0 #97b3cd, 0 -3px #97b3cd;
   background-color: #fecc3e;
-  border: 10px solid black; }
+  border: 10px solid black;
+  box-shadow: -3px 0 #97b3cd, 0 3px #97b3cd, 3px 0 #97b3cd, 0 -3px #97b3cd; }
 
 [class*='column-'] {
   float: left;
@@ -53,44 +54,32 @@ header {
   height: 50%; }
 
 header img {
-  max-width: 100%;
-  height: auto !important;
   width: 65%;
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0 auto; }
 
-nav {
-  /* div gallery*/ }
-
-nav ul {
+ul {
   font-family: 'Digital_tech';
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
-nav ul li {
-  text-align: center;
-  list-style-type: none;
-  border-bottom: 2px solid black; }
+li {
+  border-bottom: 2px solid black;
+  list-style-type: none; }
 
-nav ul li a {
-  color: #074b88;
+a {
   text-decoration: none; }
 
-nav ul li a:hover {
+a:hover, a:focus {
   color: #ff6600;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
 
-nav ul li a:visited {
-  color: #ff6600;
-  text-shadow: -10px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-
 section #full-size {
   /* div#full-size */
-  background-size: 100%;
-  border: 2px solid black; }
+  background-size: 100%; }
 
 section .all {
-  /* div.slope */
+  background-size: 100%;
   background: url("../images/digimon_all_edited.png") no-repeat; }
 
 section .agu {
