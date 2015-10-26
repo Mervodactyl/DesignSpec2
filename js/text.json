@@ -1,5 +1,4 @@
-// Globals
-var text = {
+{
     "all" : "DigiDestined are children selected by benevolent beings to protect the Digital World and sometimes Earth from evil forces. The Digital World is a plane on which Digimon, anthropomorphic creatures that originated from data produced by Earth's communication networks, live. The Digital World is volatile and is vulnerable to attack, and the Digimon that live there often find that they cannot defend their world on their own. Therefore, human children are recruited to defeat their enemies.",
 
     "agu" : "Agumon (アグモン) is a reptile Digimon, the mascot of Digimon and the partner of Tai Kamiya, the leader of the original DigiDestined. While both are matched well in that they can act rather brashly and hot-headedly when their friends are in danger, Agumon is typically the more cautious one, even if his partner disregards his advice. The pair joke around with each other a lot and go through many trials together, but their trust in each other is evident.",
@@ -18,26 +17,3 @@ var text = {
 
     "gato" : "Gatomon (テイルモン Tailmon) is an Exalted Beast Digimon in the form of a bipedal white cat with a power ring on her tail. Unlike the others, Gatomon is a champion level Digimon and thus the oldest of the original eight. Originally, Gatomon's DigiEgg was separated from the other seven Chosen Digimon during an attack by Piedmon. When she hatched she was found by Myotismon and conditioned into one of the evil Digimon's lieutenants. Eventually Gatomon joins Kari Kamiya and the other DigiDestined in their fight with the Dark Masters and Apocalymon. She is kind, playful and extremely loyal"
 };
-
-// You dont need to re-set this variable each time a click is done
-// So we take it out of the click function
-var fs = $("#full-size");
-var tb = $("#text-box");
-
-$(document).ready(function() {
-    $("a").click(function (e) {
-        e.preventDefault();
-        var newClass = $(this).attr("id");
-        var oldClass = fs.attr("class");
-
-        // Change the image
-        fs.fadeOut(function() {
-			fs.removeClass(oldClass).addClass(newClass).fadeIn("slow");
-        });
-
-        // Change the text
-        tb.fadeOut(function() {
-        	tb.text(text[newClass]).fadeIn('slow');
-        });
-	});
-});

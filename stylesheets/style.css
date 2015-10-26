@@ -53,14 +53,14 @@ html, body {
 header {
   height: 50%; }
 
-header img {
+img {
   width: 65%;
   display: block;
   margin: 0 auto; }
 
 ul {
   font-family: 'Digital_tech';
-  font-weight: bold;
+  font-weight: normal;
   text-align: center; }
 
 li {
@@ -74,36 +74,35 @@ a:hover, a:focus {
   color: #ff6600;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
 
-section #full-size {
-  /* div#full-size */
-  background-size: 100%; }
+#image-box {
+  background-size: contain;
+  background-position: center center; }
 
-section .all {
-  background-size: 100%;
+.all {
   background: url("../images/digimon_all_edited.png") no-repeat; }
 
-section .agu {
+.agu {
   background: url("../images/agu1.png") no-repeat; }
 
-section .gabu {
+.gabu {
   background: url("../images/gabu1.png") no-repeat; }
 
-section .biyo {
+.biyo {
   background: url("../images/biyo1.png") no-repeat; }
 
-section .tento {
+.tento {
   background: url("../images/tento1.png") no-repeat; }
 
-section .pal {
+.pal {
   background: url("../images/pal1.png") no-repeat; }
 
-section .goma {
+.goma {
   background: url("../images/goma1.png") no-repeat; }
 
-section .pata {
+.pata {
   background: url("../images/pata1.png") no-repeat; }
 
-section .gato {
+.gato {
   background: url("../images/gato2.png") no-repeat; }
 
 footer {
@@ -149,3 +148,5 @@ footer {
 
   .column-12 {
     width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

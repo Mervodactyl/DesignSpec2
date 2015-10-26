@@ -17,12 +17,6 @@ $orange: #ff6600;
 
 // mixins
 //===========================================================================//
-@mixin border-box {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 %clearfix {
   *zoom: 1;
   &:before,
@@ -35,25 +29,16 @@ $orange: #ff6600;
   }
 }
 
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 @mixin digi-border {
   box-shadow: -3px 0 #97b3cd, 0 3px #97b3cd, 3px 0 #97b3cd, 0 -3px #97b3cd;
 }
 
 @mixin glow {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-// mixin for bullet proof font declaration syntax
-//
-@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
-  @font-face {
-    font-family: '#{$font-family}';
-    src: url(font-path('#{$font-filename}.eot'));
-    src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
-    url(font-path('#{$font-filename}.woff')) format('woff'),
-    url(font-path('#{$font-filename}.ttf')) format('truetype'),
-    url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
-    font-weight: $font-weight;
-    font-style: $font-style;
-    font-stretch: $font-stretch;
-  }
 }

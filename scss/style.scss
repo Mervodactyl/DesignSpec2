@@ -1,20 +1,6 @@
 @import "scss_variables_mixins";
 @import "../stylesheets/normalize.css";
-
-
-// edit this mixin!!!!
-              @font-face {
-                font-family: 'Digital_tech';
-                src: url('../fonts/Digital_tech.otf');
-                font-weight: normal;
-                font-style: normal;
-              }
-              @font-face {
-                font-family: 'Digital Sans';
-                src: url('../fonts/Digital Sans EF Medium.ttf');
-                font-weight: normal;
-                font-style: normal;
-              }
+@import "fonts";
 
 *,
 *:before,
@@ -51,69 +37,61 @@ html, body {
 header {
   height: 50%;
 }
-  header img {
-
+  img {
     width: 65%;
     display:block;
     margin: 0 auto;
   }
 
-  ul {
-    font-family: 'Digital_tech';
-    font-weight: bold;
-    text-align: center;
+ul {
+  font-family: 'Digital_tech';
+  font-weight: normal;
+  text-align: center;
+}
+  li {
+    border-bottom: 2px solid black;
+    list-style-type: none;
   }
-    li {
-      border-bottom: 2px solid black;
-      list-style-type: none;
+    a {
+      text-decoration: none;
     }
-      a {
-        text-decoration: none;
-      }
-      a:hover, a:focus {
-        color: $orange;
-          @include glow;
-      }
+    a:hover, a:focus {
+      color: $orange;
+        @include glow;
+    }
 
-section #full-size { /* div#full-size */
-  background-size: 100%;
+#image-box {
+  background-size: contain;
+  background-position: center center;
 }
 
-// edit this mixin!!!!
-          section .all {
-  background-size: 100%;
-
-
-            background: url('../images/digimon_all_edited.png') no-repeat;
-          }
-          section .agu {
-            background: url('../images/agu1.png') no-repeat;
-          }
-          section .gabu {
-            background: url('../images/gabu1.png') no-repeat;
-          }
-          section .biyo {
-            background: url('../images/biyo1.png') no-repeat;
-          }
-          section .tento {
-            background: url('../images/tento1.png') no-repeat;
-          }
-          section .pal {
-            background: url('../images/pal1.png') no-repeat;
-          }
-          section .goma {
-            background: url('../images/goma1.png') no-repeat;
-          }
-          section .pata {
-            background: url('../images/pata1.png') no-repeat;
-          }
-          section .gato {
-            background: url('../images/gato2.png') no-repeat;
-          }
-
-
-
-
+.all {
+  background: url('../images/digimon_all_edited.png') no-repeat;
+}
+.agu {
+  background: url('../images/agu1.png') no-repeat;
+}
+.gabu {
+  background: url('../images/gabu1.png') no-repeat;
+}
+.biyo {
+  background: url('../images/biyo1.png') no-repeat;
+}
+.tento {
+  background: url('../images/tento1.png') no-repeat;
+}
+.pal {
+  background: url('../images/pal1.png') no-repeat;
+}
+.goma {
+  background: url('../images/goma1.png') no-repeat;
+}
+.pata {
+  background: url('../images/pata1.png') no-repeat;
+}
+.gato {
+  background: url('../images/gato2.png') no-repeat;
+}
 
 footer {
   font-family: 'Digital Sans';
