@@ -10,7 +10,7 @@ The idea behind this project was to demonstrate my understanding of [Sass/Scss](
 
 Scss is a CSS preprocessor. It is fantastic for responsive design and writing dry code thanks to its Mixins and Variables. As a result it is easier to read (once the basics are understood) and much easier to maintain than standard CSS.
 
-This was my first full website built using SCSS. I got to grips with Scss variables and mixins and some rather clever responsive design. Throw in some applied jQuery and JSON objects for good measure, a lot of photoshop cropping and whalla! The [Digimon](http://digimon.wikia.com/wiki/Digimon_Adventure), and their Digidestined - [Pokémon](http://www.pokemon.com/uk/)'s long held rival, finally have a simple site to call their own!
+This was my first full website built using SCSS. I got to grips with Scss variables and mixins and some rather clever responsive design. Throw in some applied [jQuery](https://jquery.com/) and [JSON](http://www.json.org/) objects for good measure, a lot of photoshop cropping and whalla! The [Digimon](http://digimon.wikia.com/wiki/Digimon_Adventure), and their Digidestined - Pokémon's long held rival, finally have a simple site to call their own!
 
 Desktop View                                                            |  Mobile View
 :-------------------------------------------------------------------------:|:----------------------------------------------------------------------:
