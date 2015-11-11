@@ -2,8 +2,6 @@
 
 ## *Some sassy little Digital Monsters just got their own web page...*
 
-Check it out at [Scssy little Digimon]()
-
 ## TL;DR:
 
 The idea behind this project was to demonstrate my understanding of [Sass/Scss](http://sass-lang.com/).
